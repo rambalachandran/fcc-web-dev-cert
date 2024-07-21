@@ -1,4 +1,12 @@
+<!DOCTYPE html>
 <html>
+<!-- The head contains metadata and urls that provides info about the page. For SEO>? -->
+
+<head>
+    <!-- meta tag helps set browser behavior -->
+    <meta charset="utf-8">
+    <title>CatPhotoApp</title>
+</head>
 
 <body>
     <main>
@@ -54,7 +62,19 @@
             <input type="text" name="catphotourl" placeholder="cat photo url" required>
             <button type="submit">Submit</button>
         </section>
-
+        <fieldset>
+            <legend>What's your cat's personality?</legend>
+            <input id="loving" type="checkbox" name="personality" value="loving" checked> <label
+                for="loving">Loving</label>
+            <input id="lazy" type="checkbox" name="personality" value="lazy"> <label for="lazy">Lazy</label>
+            <input id="energetic" type="checkbox" name="personality" value="energetic"> <label
+                for="energetic">Energetic</label>
+        </fieldset>
+        <footer>
+            <p>
+                No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a>
+            </p>
+        </footer>
     </main>
 </body>
 
