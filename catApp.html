@@ -3,13 +3,58 @@
 <body>
     <main>
         <h1>CatPhotoApp</h1>
-        <h2>Cat Photos</h2>
-        <!-- TODO: Add link to cat photos -->
-        <p>See more  <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
-        <a href="https://freecatphotoapp.com"> link to cat pictures </a>
-        <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2" alt="A cute grey cat" , width="200"
-            height="300">
-        <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back">
+        <section>
+            <h2>Cat Photos</h2>
+            <!-- TODO: Add link to cat photos -->
+            <!-- img element doesnt need closing tag. Such elements are called void elements -->
+            <p>See more <a href="https://freecatphotoapp.com">cat photos</a> in our gallery.</p>
+            <a href="https://freecatphotoapp.com"> link to cat pictures </a>
+            <img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2" alt="A cute grey cat" , width="200"
+                height="300">
+            <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg"
+                alt="A cute orange cat lying on its back">
+        </section>
+        <section>
+            <h2>Cat Lists</h2>
+            <h3>Things cats love:</h3>
+            <ul>
+                <li>cat nip</li>
+                <li>laser pointers</li>
+                <li>lasagna</li>
+            </ul>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/lasagna.jpg"
+                    alt="A slice of lasagna on a plate.">
+                <figcaption>Cats <em>love</em> lasagna. </figcaption>
+            </figure>
+            <h3>Top 3 things cats hate:</h3>
+            <ol>
+                <li>flea treatment</li>
+                <li>thunder</li>
+                <li>other cats</li>
+            </ol>
+            <figure>
+                <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/cats.jpg"
+                    alt="Five cats looking around a field.">
+                <figcaption>Cats <strong>hate</strong> other cats.</figcaption>
+            </figure>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <form action="https://freecatphotoapp.com/submit-cat-photo"> </form>
+            <!-- The fieldset element is used to group related inputs and labels together in a web form. fieldset elements are block-level elements, meaning that they appear on a new line. -->
+            <fieldset>
+                <!-- label elements are used to help associate the text for an input element with the input element itself (especially for assistive technologies like screen readers).-->
+
+                <!-- The id attribute is used to identify specific HTML elements. Each id attribute's value must be unique from all other id values for the entire page.-->
+                <!--To make it so selecting one radio button automatically deselects the other, both buttons must have a name attribute with the same value.-->
+                <label> <input type="radio" name="indoor-outdoor" id="indoor"> Indoor </label>
+                <label> <input type="radio" name="indoor-outdoor" id="outdoor"> Outdoor </label>
+            </fieldset>
+            <input type="text" name="catphotourl" placeholder="cat photo url" required>
+            <button type="submit">Submit</button>
+        </section>
+
     </main>
 </body>
 
