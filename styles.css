@@ -1,0 +1,62 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+h1,
+h2 {
+    font-family: Impact, serif;
+}
+
+h1,
+h2,
+p {
+    text-align: center;
+}
+
+.established {
+    font-style: italic;
+}
+
+/* #<id-name> (ex: #menu which is a <div> element) is generally used to style the specific element. */
+
+/* However, it is more common to  A class selector is defined by a name with a dot directly in front of it, (ex: .menu) */
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    /* Alternatively can just use padding: 20px if all 4 sides (top, bottom, left, right) have same value */
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 500px;
+}
+
+.flavor,
+.dessert {
+    text-align: left;
+    /* but the price didn't stay over on the right. This is because inline-block elements only take up the width of their content. To spread them out, add a width property  */
+    /* Styling the p elements as inline-block and placing them on separate lines in the code creates an extra space to the right of the first p element, causing the second one to shift to the next line. One way to fix this is to make each p element's width a little less than 50%. But that screws up the spacing*/
+    width: 75%;
+    /* 50% doesnt work if p elements are not in same line */
+}
+
+.price {
+    text-align: right;
+    width: 25%;
+}
+
+/* The p elements are nested in an article element with the class attribute of item will be styled as inline */
+.item p {
+    display: inline-block;
+}
