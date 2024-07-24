@@ -1,10 +1,23 @@
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
+    padding: 20px;
+}
+
+hr {
+    height: 2px;
+    background-color: brown;
+    border-color: brown;
+}
+
+.bottom-line {
+    margin-top: 25px;
 }
 
 h1 {
     font-size: 40px;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 h2 {
@@ -42,6 +55,13 @@ p {
     max-width: 500px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -25px; /* Negative values help to move the margin up and closer to previous element */
+}
+
 .flavor,
 .dessert {
     text-align: left;
@@ -54,9 +74,43 @@ p {
 .price {
     text-align: right;
     width: 25%;
+    font-size: 18px;
 }
 
 /* The p elements are nested in an article element with the class attribute of item will be styled as inline */
 .item p {
     display: inline-block;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+/*FOOTER*/
+footer {
+    font-size: 14px;
+}
+
+.address {
+    margin-bottom: 5px;
+}
+
+a {
+    color: black;
+}
+
+/* element:visited is used to change property when clicked (typically for a with href) */
+/* you can use hex codes for color instead of name */
+a:visited {
+    /* color:black; */
+    color: #000000;
+}
+
+/* elemnt:hover is used to change property when hovered over the element. Ex: a element with href */
+a:hover {
+    color: brown;
+}
+
+/* You change properties of a link when the link is actually being clicked by using a pseudo-selector that looks like a:active { propertyName: propertyValue; }. */
+a:active {
+    color: brown;
 }
