@@ -27,6 +27,12 @@ h1 {
     height: 25px;
     /* rgba function has alpha as the 4th input which determines opacity (0 -> fully transparent to 1.0 -> fully opaque) */
     background-color: rgba(255, 255, 255, 0.5);
+    /* border-left: width style color;  -> a single command to control multiple aspects*/ 
+
+    /* border-left-width:  10px;
+    border-left-style: solid; -> double is another style option 
+    border-left-color: black; */
+    border-left: 10px double rgba(0,0,0, 0.75)
   }
 
 /* The default display property for div elements is block. So when two block elements are next to each other, they stack like actual blocks. For example, your marker elements are all stacked on top of each other. */
@@ -46,12 +52,25 @@ h1 {
         -> `color1` and `color2` are color arguments, which are the colors that will be used in the transition itself. These can be any type of color, including color keywords, hex, rgb, or hsl. */
     
     /* Color-stops allow you to fine-tune where colors are placed along the gradient line. They are a length unit like px or percentages that follow a color in the linear-gradient function. Adding a color stop at 75% from red */
-    background-color: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0),  rgb(0, 0, 255));
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+    /* box-shadow: offsetX offsetY blurRadius spreadRadius color;
+Here's how the offsetX and offsetY values work:
+
+-> both offsetX and offsetY accept number values in px and other CSS units
+-> a positive offsetX value moves the shadow right and a negative value moves it left
+-> a positive offsetY value moves the shadow down and a negative value moves it up
+-> The height and width of the shadow is determined by the height and width of the element it's applied to. 
+-> You can also use an optional spreadRadius value to spread out the reach of the shadow.
+
+-> blurRadius is Optional. If a blurRadius value isn't included, it defaults to 0 and produces sharp edges. The higher the value of blurRadius, the greater the blurring effect is.
+*/
+box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
 }
 
 .green{
     /* Hex color values start with a # character and take six characters from 0-9 and A-F. The first pair of characters represent red, the second pair represent green, and the third pair represent blue. */
-    background-color: #00FF00;
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+    box-shadow: 0 0 20px 0 #3B7E20CC;
 }
 
 .blue{
@@ -64,6 +83,6 @@ If you imagine a color wheel, the hue red is at 0 degrees, green is at 120 degre
 Saturation is the intensity of a color from 0%, or gray, to 100% for pure color. You must add the percent sign % to the saturation and lightness values.
 
 Lightness is how bright a color appears, from 0%, or complete black, to 100%, complete white, with 50% being neutral. */
-    background-color: hsl(240, 100%, 50%);
-
+background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
 }
