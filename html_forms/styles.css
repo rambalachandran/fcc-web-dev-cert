@@ -1,0 +1,84 @@
+body{
+    font-family: Tahoma;
+        font-size: 16px;
+    width: 100%;
+    /* The vh unit stands for viewport height, and is equal to 1% of the height of the viewport. This makes it relative to the viewport height. */
+    height: 100vh;
+    /* get rid of the horizontal scroll-bar, by setting the body default margin added by some browsers to 0. */
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+}
+
+h1, p {
+    margin: 1em auto;
+    text-align: center;
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    width: 60vw;
+    padding-bottom: 2em;
+  }
+
+  fieldset{
+    /* Remove the border, */
+    border: 0; 
+    /* add 2rem of padding only to the top and bottom.  remove the padding from the left and right. */
+    padding: 2rem 0;
+    /* give the fieldset elements a bit of separation, */
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+  /* targets the last fieldset element  */
+fieldset:last-of-type {
+    border-bottom: none;
+}
+
+input,
+textarea,
+select {
+    width: 100%;
+    margin: 10px 0 0 0;
+    min-height: 2em;
+}
+
+input, textarea {
+    background-color: #0a0a23;
+    border: 1px solid #0a0a23;
+    color: #ffffff;
+  }
+
+.inline{
+    width: unset;
+    /* css margin element follows clockwise order. < Top Right Bottom Left> */
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    min-width: 300px;
+  }
+  /* By default, a padding of 1px 2px is given to input elements you can type in. Provide similar padding for file upload type */
+  input[type="file"]{
+    padding: 1px 2px;
+  }
+/* As label elements are inline by default, they are all displayed side by side on the same line To make them appear on separate lines, add display: block to the label element, and add a margin of 0.5rem 0, to separate them from each other. */
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+/* mainly affects terms and conditions of the form. */
+a {
+    color: #dfdfe2;
+  }
